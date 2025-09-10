@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Page</h1>
+        <button id="toggle-mode">Toggle Light/Dark Mode</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <span class="error-message" id="name-error"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <span class="error-message" id="email-error"></span>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <span class="error-message" id="password-error"></span>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is this project about?</h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>This project demonstrates interactive web page features using JavaScript.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">How do I use the form?</h3>
+                <div class="faq-answer" style="display: none;">
+                    <p>Fill in the fields and click submit. Validation will occur before submission.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
